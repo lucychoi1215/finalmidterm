@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* border: 1px solid black; */
+}
+
+@keyframes mymove {
+  0% {background-color: #d4eeff;}
+  50% {background-color: #8dc0e0;}
+  70% {background-color: #79afd1;}
+  100% {background-color: #d4eeff;}
+}
+
+@-webkit-keyframes bounceIn {
+  0% {opacity: 0;
+      transform: scale(0.1);}
+
+  60% {opacity: 0.5;
+  transform: scale(1.2);}
+
+  100% {opacity: 1;
+  transform: scale(1);}
+}
+
+.button {
+  padding: 2vmin 4vmin;
+  font-family: 'Spartan';
+  font-size: 3vmin;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #7aa3bf;
+  border: none;
+  border-radius: 5vmin;
+  box-shadow: 0 1vmin #999;
+
+  margin-top: 10vmin;
+}
+
+.button:hover {background-color: #638fad}
+
+.button:active {
+  background-color: #5e89a6;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+#background{
+  display: flex;
+  flex-direction: column;
+  background-image: url("midterm1.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#logoContainer img{
+  width: 80%;
+}
+
+#intro {
+  font-family: 'Spartan';
+  font-size: 3vmin;
+  /* animation: bounceIn 3s ease-in-out 0.5s; */
+
+}
+
+#title {
+  font-family: 'Luckiest Guy';
+  font-size: 15vmin;
+  margin-top: 10vmin;
+  /* color: #d62d90; */
+  color: white;
+  text-shadow: 1vmin 1vmin #292929;
+    -webkit-animation: bounceIn 1s ease-in;
+}
